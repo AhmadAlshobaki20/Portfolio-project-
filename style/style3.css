@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+/*start nav-bar content*/
+.nav-bar{
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 250px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 999;
+}
+nav a{
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #1a2247;
+}
+
+.hamburgar-menue {
+  display: none;
+}
+li a{
+  font-size: 1.2rem;
+}
+
+li a:hover{
+  color: rgb(1, 156, 252);
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 20px;
+}
+header h1{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  font-size: 3em;
+  color: white;
+}
+.feilds{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10em;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.all-content{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.all-content input{
+  width: 20em;
+  height: 3em;
+  border-radius: 10px;
+}
+
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn a {
+  background-color: #0a47de;
+  border-radius: 10px;
+  color: #ffffff;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+}
+
+.btn a:hover {
+  background-color: #3c68d6;
+  transform: scale(1.1);
+  transition: 0.7s ease;
+}
+footer {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  height: 20vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.links a {
+  text-decoration: none;
+  color: black;
+}
+.links a:hover {
+  color: rgb(81, 0, 128);
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-bar {
+    padding: 15px 100px;
+    max-height: 80px;
+  }
+  ul {
+    display: none;
+  }
+  .hamburgar-menue {
+    display: block;
+    /* position: relative;
+    right: 20px; */
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 550px) {
+  .nav-bar {
+    padding: 15px 40px;
+    max-height: 70px;
+  }
+  header h1 {
+    font-size: 1em;
+  }
+  ul {
+      display: none;
+  }
+}
